@@ -49,4 +49,11 @@ public class TestOJ {
         ListNode l2=new ListNode(5, new ListNode(6, new ListNode(4)));
         Assertions.assertEquals("708", p2.getVal(p2.addTwoNumbers(l1, l2)));
     }
+
+    @Test
+    public void Test3(){
+        P3 p3=new P3();
+        Assertions.assertEquals(3, p3.lengthOfLongestSubstring("abcccbcccaa"));
+        Assertions.assertEquals(1, p3.lengthOfLongestSubstring("aaaaaa"));
+    }
 }
