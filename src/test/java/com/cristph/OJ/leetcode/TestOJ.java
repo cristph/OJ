@@ -43,17 +43,29 @@ public class TestOJ {
 
 
     @Test
-    public void Test2(){
-        P2 p2=new P2();
-        ListNode l1=new ListNode(2, new ListNode(4, new ListNode(3)));
-        ListNode l2=new ListNode(5, new ListNode(6, new ListNode(4)));
+    public void Test2() {
+        P2 p2 = new P2();
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         Assertions.assertEquals("708", p2.getVal(p2.addTwoNumbers(l1, l2)));
     }
 
     @Test
-    public void Test3(){
-        P3 p3=new P3();
+    public void Test3() {
+        P3 p3 = new P3();
         Assertions.assertEquals(3, p3.lengthOfLongestSubstring("abcccbcccaa"));
         Assertions.assertEquals(1, p3.lengthOfLongestSubstring("aaaaaa"));
+    }
+
+    @Test
+    public void Test4() {
+
+    }
+
+    @Test
+    public void Test5() {
+        P5 p5 = new P5();
+        Assertions.assertEquals("aaaaaa", p5.longestPalindrome("aaaaaa"));
+        Assertions.assertTrue(p5.longestPalindrome("abacab").equals("abaca") || p5.longestPalindrome("abacab").equals("bacab"));
     }
 }
