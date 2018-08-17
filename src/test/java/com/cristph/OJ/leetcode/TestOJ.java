@@ -68,4 +68,27 @@ public class TestOJ {
         Assertions.assertEquals("aaaaaa", p5.longestPalindrome("aaaaaa"));
         Assertions.assertTrue(p5.longestPalindrome("abacab").equals("abaca") || p5.longestPalindrome("abacab").equals("bacab"));
     }
+
+    @Test
+    public void Test6() {
+        P6 p6 = new P6();
+        Assertions.assertEquals("PAHNAPLSIIGYIR", p6.convert("PAYPALISHIRING", 3));
+        Assertions.assertEquals("PINALSIGYAHRPI", p6.convert("PAYPALISHIRING", 4));
+    }
+
+    @Test
+    public void Test7() {
+        P7 p7 = new P7();
+        Assertions.assertEquals(0, p7.reverse(2147483647));
+        Assertions.assertEquals(12, p7.reverse(21));
+    }
+
+    @Test
+    public void Test8() {
+        P8 p8 = new P8();
+        Assertions.assertEquals(-42, p8.myAtoi("   -42"));
+        Assertions.assertEquals(-2147483648, p8.myAtoi("-91283472332"));
+        Assertions.assertEquals(0, p8.myAtoi("words and 987"));
+        Assertions.assertEquals(4193, p8.myAtoi("4193 with words"));
+    }
 }
