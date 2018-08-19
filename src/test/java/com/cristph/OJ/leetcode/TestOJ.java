@@ -91,4 +91,26 @@ public class TestOJ {
         Assertions.assertEquals(0, p8.myAtoi("words and 987"));
         Assertions.assertEquals(4193, p8.myAtoi("4193 with words"));
     }
+
+    @Test
+    public void Test9() {
+        P9 p9 = new P9();
+        Assertions.assertEquals(true, p9.isPalindrome(11));
+        Assertions.assertEquals(true, p9.isPalindrome(0));
+        Assertions.assertEquals(true, p9.isPalindrome(121));
+        Assertions.assertEquals(false, p9.isPalindrome(-121));
+    }
+
+    @Test
+    public void Test10() {
+        P10 p10 = new P10();
+        Assertions.assertEquals(false, p10.isMatch("aa", "a"));
+        Assertions.assertEquals(true, p10.isMatch("aa", "a*"));
+        Assertions.assertEquals(true, p10.isMatch("ab", ".*"));
+        Assertions.assertEquals(true, p10.isMatch("abc", ".*c"));
+        Assertions.assertEquals(false, p10.isMatch("abcd", ".*cdd"));
+        Assertions.assertEquals(true, p10.isMatch("aab", "c*a*b"));
+        Assertions.assertEquals(false, p10.isMatch("mississippi", "mis*is*p*."));
+        Assertions.assertEquals(true, p10.isMatch("a", "ab*"));
+    }
 }
