@@ -6,6 +6,8 @@ import com.cristph.OJ.common.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+
 public class TestOJ {
 
     @Test
@@ -112,5 +114,23 @@ public class TestOJ {
         Assertions.assertEquals(true, p10.isMatch("aab", "c*a*b"));
         Assertions.assertEquals(false, p10.isMatch("mississippi", "mis*is*p*."));
         Assertions.assertEquals(true, p10.isMatch("a", "ab*"));
+
+
+        HashMap map = new HashMap<>();
+        map.put("", "");
+    }
+
+
+    @Test
+    public void Test11() {
+        P11 p11 = new P11();
+        Assertions.assertEquals(49, p11.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
+    }
+
+    @Test
+    public void Test14() {
+        P14 p14 = new P14();
+        Assertions.assertEquals("fl", p14.longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
+        Assertions.assertEquals("a", p14.longestCommonPrefix(new String[]{"aa", "a"}));
     }
 }
