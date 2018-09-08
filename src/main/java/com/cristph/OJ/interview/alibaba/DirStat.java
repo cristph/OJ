@@ -1,4 +1,4 @@
-package com.cristph.OJ.interview;
+package com.cristph.OJ.interview.alibaba;
 
 import java.io.IOException;
 import java.nio.channels.SeekableByteChannel;

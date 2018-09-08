@@ -1,6 +1,6 @@
 package com.cristph.OJ.interview;
 
-import com.cristph.OJ.interview.DirStat;
+import com.cristph.OJ.interview.alibaba.DirStat;
 import org.junit.jupiter.api.Test;
 
 public class TestDirStat {
