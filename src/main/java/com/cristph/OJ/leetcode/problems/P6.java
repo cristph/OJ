@@ -1,4 +1,4 @@
-package com.cristph.OJ.leetcode;
+package com.cristph.OJ.leetcode.problems;
 
 import java.util.ArrayList;
 

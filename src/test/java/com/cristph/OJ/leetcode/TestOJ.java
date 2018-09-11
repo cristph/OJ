@@ -3,6 +3,7 @@ package com.cristph.OJ.leetcode;
 
 import com.cristph.OJ.common.ListNode;
 import com.cristph.OJ.common.TreeNode;
+import com.cristph.OJ.leetcode.problems.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
