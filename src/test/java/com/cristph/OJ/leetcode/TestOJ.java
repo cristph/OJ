@@ -51,6 +51,10 @@ public class TestOJ {
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         Assertions.assertEquals("708", p2.getVal(p2.addTwoNumbers(l1, l2)));
+
+        ListNode l3 = new ListNode(1, new ListNode(8));
+        ListNode l4 = new ListNode(0);
+        Assertions.assertEquals("18", p2.getVal(p2.addTwoNumbers(l3, l4)));
     }
 
     @Test
